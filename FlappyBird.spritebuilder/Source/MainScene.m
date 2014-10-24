@@ -43,7 +43,7 @@
     _clouds = @[_cloud1, _cloud2];
     _bushes = @[_bush1, _bush2];
     
-    for (CCNode *gvround in _grounds) {
+    for (CCNode *ground in _grounds) {
         // set collision txpe
         ground.physicsBody.collisionType = @"level";
         ground.zOrder = DrawingOrderGround;
