@@ -11,12 +11,28 @@
     
     [physicsNode addChild:character]; // will add your character as a child of physicsNode so that physics will be applied to it.
     
-    [self addObstacle];
+    [self addObstacle]; //adding obstacle to appear on screen
+    timeSinceObstacle = 0.0f; //setting time for obstacle
+    
+    /*
+     We want to add new obstacles at regular intervals. Games typically use what is called an "update loop" or a "run loop" to perform regularly scheduled activities. Sometimes code is run really fast - in Cocos2D the update loop runs 60 times per second by default! That code usually checks things like player health, whether enemies have died, or whether our character is jumping too high!
+     */
 }
 
 -(void)update:(CCTime)delta
 {
-    // put update code here
+    // Increment the time since the last obstacle was added
+    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
+    
+    // Check to see if two seconds have passed
+    if (timeSinceObstacle > 2.0f)
+    {
+        // Add a new obstacle
+        [self addObstacle];
+        
+        // Then reset the timer.
+        timeSinceObstacle = 0.0f;
+    }
 }
 
 /*

@@ -1201,7 +1201,7 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.2199999988079071</real>
 						</array>
 					</dict>
 					<dict>
@@ -1222,10 +1222,10 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.1214563176035881</real>
+							<real>0.10364224761724472</real>
+							<real>0.52692973613739014</real>
+							<real>0.40000000596046448</real>
 						</array>
 					</dict>
 					<dict>
@@ -1246,14 +1246,16 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
+							<real>320</real>
 							<real>0.0</real>
-							<real>0.0</real>
-							<integer>0</integer>
+							<integer>3</integer>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
